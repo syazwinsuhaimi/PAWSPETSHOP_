@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>SERVICES</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
+        <style> 
+        
+            body,h1 {font-family: "Raleway", sans-serif}
+        
+    
+      
+      
+      .mySlides {display:none;}
+    </style>
+
+       
+    </head>
+
+    <body background="image/lightblue.jpg">
+    <body>
+     
+      
+  
+      
+      
+        <img src="image/catdog2.jpg"  style="width:100%;min-height:350px;max-height:500px;">
+
+
+        <center>
+        <h1>OUR SERVICES</h1>
+        <hr class="w3-border-grey" style="margin:auto;width:40%">
+        </center>
+
+        <br>
+       
+
+         <br>
+
+          </div>
+          <div class="w3-content w3-display-container">
+            <img class="mySlides" src="image/checkup.jpg" style="width:100%">
+            <img class="mySlides" src="image/catdentist.jpg" style="width:100%">
+            <img class="mySlides" src="image/grooming.jpg" style="width:100%">
+            <img class="mySlides" src="image/pharmacy.jpg" style="width:100%">
+            <img class="mySlides" src="image/surgery.jpg" style="width:100%">
+            <img class="mySlides" src="image/pethotel.jpeg" style="width:100%">
+          
+          
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+        
+          
+          <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+          }
+          </script>
+          
+          <br>
+
+          <!-- Services -->
+<div id="services" class="w3-container w3-padding-32">
+    <div class="w3-row w3-center">
+    
+    <div class="w3-third">
+    <img src="image/checkupsymbol.png"  style="width:30%">
+   <br>
+   <h4>General Health Check and Wellness Care</h4>
+    </div>
+
+    
+    <div class="w3-third">
+    <img src="image/dentalsymbol.png" style="width:30%">
+    <br>
+    <h4>Dental Treatment</h4>
+    </div>
+    
+    <div class="w3-third">
+    <img src="image/groomingsymbol.png"  style="width:30%">
+    <br>
+    <h4>Pet Grooming & Spa</h4>
+    </div>
+
+    
+
+    <div class="w3-third">
+        <br>
+        <img src="image/surgerysymbol.png" style="width:30%">
+        <br>
+        <h4>General Surgery Procedures</h4>
+        </div>
+
+        <div class="w3-third">
+            <br>
+            <img src="image/pharmacysymbol.png"  style="width:30%">
+            <br>
+            <h4>In-house Pharmacy</h4>
+            </div>
+
+            <div class="w3-third">
+                <br>
+                <img src="image/pethotelsymbol.png"  style="width:30%">
+                <br>
+                <h4>Pet Boarding & Daycare</h4>
+                </div>
+    </div>
+    </div>
+    <audio controls>
+      <source src="audio/sound1.ogg" type="audio/ogg">
+      <source src="audio/sound1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    </body>
+</html>
